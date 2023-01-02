@@ -11,7 +11,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]f
+[![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
@@ -166,7 +166,7 @@ Project Link: [https://github.com/lukethacoder/salesforce-trekken](https://githu
 [stars-url]: https://github.com/lukethacoder/salesforce-trekken/stargazers
 [issues-shield]: https://img.shields.io/github/issues/lukethacoder/salesforce-trekken.svg?style=for-the-badge
 [issues-url]: https://github.com/lukethacoder/salesforce-trekken/issues
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0A66C2
 [linkedin-url]: https://linkedin.com/in/luke-secomb/
 [product-screenshot]: docs/screenshot.png
 [Tauri-url]: https://tauri.app/
