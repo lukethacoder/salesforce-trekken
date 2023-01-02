@@ -1,0 +1,1 @@
+function e(){return{changelog:t}}const t=[{title:"MVP",date:"2022-12-30",version:"0.1.0",items:{"✨ Features":["SFDX CLI Authentication","Access Token Authentication","Opt-in include Images","CMS Type Filter","Global String Filter"]}}],n=Object.freeze(Object.defineProperty({__proto__:null,load:e},Symbol.toStringTag,{value:"Module"}));export{n as _,e as l};
