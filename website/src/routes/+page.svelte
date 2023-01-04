@@ -72,16 +72,16 @@
     </div>
   </div>
 
-  <!-- <div class="w-full bg-black relative py-16">
+  <div class="w-full bg-black relative py-16 z-10">
     <div class="w-full mx-auto max-w-5xl px-4 relative z-10">
       <div class="w-full">
         <img
-          class="w-full pointer-events-none"
-          src="/screenshot-wide.png"
+          class="w-full pointer-events-none border-2 border-jumbo-400 rounded-md"
+          src="/screenshot-full.png"
           alt="screenshot of the Salesforce Trekken application"
         />
       </div>
     </div>
-  </div> -->
+  </div>
 
 </div>

@@ -26,6 +26,7 @@ const CHANGELOG: ChangeLogItem[] = [
         'Opt-in include Images',
         'CMS Type Filter',
         'Global String Filter',
+        'Column Sorting',
       ],
       // '🐛 Bugfixes': ['Initial release'],
     },

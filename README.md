@@ -60,7 +60,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+[![Salesforce Trekken Screen Shot][product-screenshot]](https://trekken.lukesecomb.digital)
 
 This repo hosts the website and issue/feature requests for the closed source `Salesforce Trekken` project.
 

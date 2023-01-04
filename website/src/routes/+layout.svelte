@@ -4,6 +4,14 @@
 </script>
 
 <svelte:head>
+  <meta property='og:image' content='/thumbnail.png' />
+  <meta property='twitter:image:src' content='/thumbnail.png' />
+  <meta property='twitter:card' content='summary_large_image' />
+  <meta property='twitter:widgets:new-embed-design' content='on' />
+  <meta property='og:image:width' content='1200' />
+  <meta property='og:image:height' content='620' />
+  <meta property='og:image:alt'content='Logo for Salesforce Trekken' />
+
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </svelte:head>
 
