@@ -1,18 +1,6 @@
 <a name="readme-top"></a>
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+> **NOTE**: This tool has not yet been released and still requires Github Actions to be setup to allow for said release.
 
 <!-- PROJECT LOGO -->
 <br />
@@ -22,17 +10,23 @@
   </a>
 
 <h3 align="center">Salesforce Trekken</h3>
-
   <p align="center">
     Salesforce CMS Migration Tool
     <br />
     <br />
-    <a href="https://sf-trekken.lukesecomb.digital">View Site</a>
+    <a href="https://trekken.lukesecomb.digital">View Site</a>
     ·
     <a href="https://github.com/lukethacoder/salesforce-trekken/issues">Report Bug</a>
     ·
     <a href="https://github.com/lukethacoder/salesforce-trekken/issues">Request Feature</a>
   </p>
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -50,32 +44,31 @@
     <!-- <li><a href="#roadmap">Roadmap</a></li> -->
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
+
+## What is Salesforce Trekken
 
 [![Salesforce Trekken Screen Shot][product-screenshot]](https://trekken.lukesecomb.digital)
 
-This repo hosts the website and issue/feature requests for the closed source `Salesforce Trekken` project.
+Salesforce Trekken aims to rethink the Salesforce CMS migration experience. Using modern web technologies and thoughtful a user experience, migrating Salesforce CMS data has never been easier.
 
-> This project has not yet been completed.
+Salesforce Trekken is a cross-platform web powered desktop application wrapped in [Tauri](https://tauri.app/). The Salesforce REST API is used under the hood in addition to the `sfdx` cli if installed.
 
-~~You can download the desktop application [here](https://lukesecomb.digital)~~
+<!-- The word "Trekken" comes from the Dutch word for "pull". Why Dutch? Because I'm currently in the Netherlands so it felt fitting to give this a Dutch name. -->
+
+> **Note**: This is a fairly early and untested version, especially on non-windows platforms. Any and all feedback is greatly appreciated.
+>
+> ~~You can download the desktop application [here](https://lukesecomb.digital)~~
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
-- [![Tauri][Tauri]][Tauri-url]
-- [![React][React.js]][React-url]
+- [![Tauri][tauri]][tauri-url]
+- [![React][react.js]][react-url]
 - [![TailwindCSS][tailwindcss]][tailwindcss-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -83,6 +76,7 @@ This repo hosts the website and issue/feature requests for the closed source `Sa
 ### Prerequisites
 
 Salesforce Trekken allows you to authenticate using two different methods:
+
 - via the [`sfdx` cli](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli.htm)
 - via an `ACCESS_TOKEN`
 
@@ -90,74 +84,38 @@ You must have the `sfdx` cli installed with your org already authenticated for t
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- USAGE EXAMPLES -->
-<!-- ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-
-
 <!-- ROADMAP -->
-<!-- ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+## Roadmap
+
+- [ ] Named Credentials Authentication
+- [ ] Multi-thread REST API requests for CMS data
 
 See the [open issues](https://github.com/lukethacoder/salesforce-trekken/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 To help make this tool as good as it can be, we welcome creating issues/feature requests using this repository.
 
+See [CODE_OF_CONDUCT](https://github.com/lukethacoder/salesforce-trekken/blob/main/CODE_OF_CONDUCT) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LICENSE -->
+
 ## License
 
-Distributed under the GPL-3.0 license. See `LICENSE.txt` for more information.
+Copyright (c) 2022-2023 Luke Secomb. Distributed under the GPL-3.0 license. See [LICENSE](https://github.com/lukethacoder/salesforce-trekken/blob/main/LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- CONTACT -->
-## Contact
-
-Luke Secomb - [@lu_ke____](https://twitter.com/lu_ke____)
-
-Project Link: [https://github.com/lukethacoder/salesforce-trekken](https://github.com/lukethacoder/salesforce-trekken)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-<!-- ## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/lukethacoder/salesforce-trekken.svg?style=for-the-badge
 [contributors-url]: https://github.com/lukethacoder/salesforce-trekken/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/lukethacoder/salesforce-trekken.svg?style=for-the-badge
@@ -169,9 +127,9 @@ Project Link: [https://github.com/lukethacoder/salesforce-trekken](https://githu
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0A66C2
 [linkedin-url]: https://linkedin.com/in/luke-secomb/
 [product-screenshot]: docs/screenshot.png
-[Tauri-url]: https://tauri.app/
-[Tauri]: https://img.shields.io/badge/tauri-242526?style=for-the-badge&logo=tauri
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
+[tauri-url]: https://tauri.app/
+[tauri]: https://img.shields.io/badge/tauri-242526?style=for-the-badge&logo=tauri
+[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]: https://reactjs.org/
 [tailwindcss]: https://img.shields.io/badge/TailwindCSS-0f172a?style=for-the-badge&logo=tailwindcss&logoColor=38bdf8
 [tailwindcss-url]: https://tailwindcss.com/
