@@ -4,6 +4,10 @@
 )]
 
 use std::process::Command;
+#[cfg(target_os = "linux")]
+use std::fs::metadata;
+#[cfg(target_os = "linux")]
+use std::path::PathBuf;
 use tauri::Manager;
 
 mod salesforce;
@@ -65,6 +69,7 @@ async fn info(access_token: &str, base_url: &str) -> Result<Info, String> {
     salesforce::info::get(client, base_url, access_token).await
 }
 
+// https://github.com/tauri-apps/tauri/issues/4062
 #[tauri::command]
 fn show_in_folder(path: String) {
     #[cfg(target_os = "windows")]
