@@ -1,5 +1,8 @@
-
-<title>Salesforce CMS Migration Tool | Salesforce Trekken</title>
+<svelte:head>
+  <title>Salesforce Trekken | Salesforce CMS Migration Tool</title>
+  <meta property="og:title" content='Salesforce Trekken | Salesforce CMS Migration Tool' />
+  <meta name="twitter:title" content='Salesforce Trekken | Salesforce CMS Migration Tool'>
+</svelte:head>
 
 <div class="text-white">
   <div class="flex relative before:bottom-0 before:h-24 before:absolute before:w-full md:before:bg-black before:z-10">

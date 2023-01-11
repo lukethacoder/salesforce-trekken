@@ -1,16 +1,32 @@
 <script>
   import { page } from '$app/stores'
   import '../app.css'
+
+  const DOMAIN = 'trekken.lukesecomb.digital';
+  const BASE_URL = `https://${DOMAIN}`;
+  const SEO_DESCRIPTION = 'Salesforce CMS Migration Tool with a focus on user experience and ease of use.'
+  const SEO_OPEN_GRAPH_IMAGE = `${BASE_URL}/thumbnail.png`
 </script>
 
 <svelte:head>
-  <meta property='og:image' content='/thumbnail.png' />
-  <meta property='twitter:image:src' content='/thumbnail.png' />
-  <meta property='twitter:card' content='summary_large_image' />
-  <meta property='twitter:widgets:new-embed-design' content='on' />
+  <meta name="description" content={SEO_DESCRIPTION}>
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content={BASE_URL} />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content={SEO_DESCRIPTION} />
+  <meta property="og:image" content={SEO_OPEN_GRAPH_IMAGE} />
   <meta property='og:image:width' content='1200' />
   <meta property='og:image:height' content='620' />
   <meta property='og:image:alt'content='Logo for Salesforce Trekken' />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content={SEO_DESCRIPTION}>
+  <meta name="twitter:image" content={SEO_OPEN_GRAPH_IMAGE}>
+  <meta property="twitter:domain" content={DOMAIN}>
+  <meta property="twitter:url" content={BASE_URL}>
+  <meta property='twitter:widgets:new-embed-design' content='on' />
 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </svelte:head>
