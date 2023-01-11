@@ -5,6 +5,11 @@ on:
       - 'v*'
   workflow_dispatch:
 
+defaults:
+  run:
+    # make sure we're in the tauri app directory
+    working-directory: ./app
+
 jobs:
   release:
     strategy:
