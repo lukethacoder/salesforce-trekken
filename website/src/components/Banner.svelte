@@ -3,9 +3,9 @@
 </script>
 
 <svelte:head>
-  <title>{title}</title>
-  <meta property="og:title" content={title} />
-  <meta name="twitter:title" content={title}>
+  <title>{title} | Salesforce Trekken</title>
+  <meta property="og:title" content={`${title} | Salesforce Trekken`} />
+  <meta name="twitter:title" content={`${title} | Salesforce Trekken`}>
 </svelte:head>
 
 <header class="w-full text-center relative before:top-full before:h-24 before:absolute before:left-0 before:w-full md:before:bg-black before:z-10">
