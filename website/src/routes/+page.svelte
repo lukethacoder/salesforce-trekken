@@ -10,18 +10,20 @@
       <header class="z-10 relative flex justify-between mt-12 mb-12 md:mb-0">
         <div class="mt-24">
           <h1 class="text-5xl md:text-6xl font-semibold mb-3">Salesforce Trekken</h1>
-          <p class="text-gray-500 font-medium text-xl mb-10">Salesforce CMS Migration Tool</p>
+          <p class="text-gray-400 font-medium text-xl mb-10">Salesforce CMS Migration Tool</p>
 
           <!-- dropdown here of diff download options -->
-          <div class="flex mb-4">
-            <p class="bg-jumbo-400 text-white cursor-not-allowed rounded border border-transparent px-6 py-2 font-semibold text-center whitespace-nowrap">download coming soon</p>
-            <!-- <a
-              href="github-pls"
+          <div class="flex mb-2">
+            <a
+              href="https://github.com/lukethacoder/salesforce-trekken/releases"
+              target="_blank"
+              rel="noreferrer noopener"
               class="bg-primary hover:bg-primary-600 text-white active:bg-primary-700 focus-visible:bg-primary focus-visible:outline-primary rounded border border-transparent px-6 py-2 font-semibold text-center focus:outline-none whitespace-nowrap"
             >
               Download
-            </a> -->
+            </a>
           </div>
+          <p class="text-sm text-gray-400 mb-4">Available for Windows, MacOS and Linux</p>
         </div>
         <div class="hidden md:flex w-96">
           <img

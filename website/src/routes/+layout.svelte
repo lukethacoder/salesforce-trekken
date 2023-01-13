@@ -5,7 +5,7 @@
   const DOMAIN = 'trekken.lukesecomb.digital';
   const BASE_URL = `https://${DOMAIN}`;
   const SEO_DESCRIPTION = 'Salesforce CMS Migration Tool with a focus on user experience and ease of use.'
-  const SEO_OPEN_GRAPH_IMAGE = `${BASE_URL}/thumbnail.png`
+  const SEO_OPEN_GRAPH_IMAGE = `${BASE_URL}/thumbnail.png`  
 </script>
 
 <svelte:head>
@@ -29,6 +29,18 @@
   <meta property='twitter:widgets:new-embed-design' content='on' />
 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+  <script data-goatcounter="https://salesforce-trekken.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1V44LXT7Q"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-N1V44LXT7Q');
+  </script>
 </svelte:head>
 
 <header

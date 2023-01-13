@@ -1,7 +1,5 @@
 <a name="readme-top"></a>
 
-> **NOTE**: This tool has not yet been released and still requires Github Actions to be setup to allow for said release.
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -61,7 +59,7 @@ Salesforce Trekken is a cross-platform web powered desktop application wrapped i
 
 > **Note**: This is a fairly early and untested version, especially on non-windows platforms. Any and all feedback is greatly appreciated.
 >
-> ~~You can download the desktop application [here](https://lukesecomb.digital)~~
+> Downloads can be found on the [Releases tab](https://github.com/lukethacoder/salesforce-trekken/releases)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
