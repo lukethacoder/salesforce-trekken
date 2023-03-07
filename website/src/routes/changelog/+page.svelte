@@ -8,9 +8,9 @@
     const date = new Date(dateString)
 
     return new Intl.DateTimeFormat('en-US', {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
       timeZone: 'Australia/Sydney',
     }).format(date)
   }
@@ -18,11 +18,10 @@
 
 <title>Changelog | Salesforce Trekken</title>
 
-<Banner title="Changelog"/>
+<Banner title="Changelog" />
 
 <div class="bg-black relative z-20 pt-20 min-h-[60vh]">
   <div class="w-full mx-auto max-w-5xl px-4">
-
     <div class="text-white">
       {#each data.changelog as release}
         <section class="md:flex">
@@ -35,10 +34,12 @@
               class="absolute -top-[1.0625rem] -left-1 h-[0.5625rem] w-[0.5625rem] rounded-full border-2 border-gray-300 bg-gray-900 md:top-[0.4375rem]"
             />
 
-            <h2 class="text-2xl font-semibold mb-4">{release.version}: {release.title}</h2>
+            <h2 class="text-2xl font-semibold mb-4">
+              {release.version}{#if release.title}: {release.title}{/if}
+            </h2>
             {#each Object.keys(release.items) as item}
               <p class="mb-3 font-semibold">{item}</p>
-              <ul class='mb-6 ml-2'>
+              <ul class="mb-6 ml-2">
                 {#each release.items[item] as dot}
                   <li class="list-disc list-inside text-sm mb-1">{dot}</li>
                 {/each}
