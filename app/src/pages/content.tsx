@@ -202,8 +202,6 @@ export function Content() {
       setContent(contentMetadata[0])
       setContentTypes(contentMetadata[1])
 
-      console.log('contentMetadata ', contentMetadata[0])
-
       const extraCols = contentMetadata[1].reduce<ColumnDef<any>[]>(
         (acc, type) => {
           const colsForType = Object.values(type.nodeTypes).reduce<
