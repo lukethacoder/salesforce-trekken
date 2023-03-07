@@ -37,7 +37,15 @@ export function OutputModal({
         accessToken: store.accessToken,
         exportPath: filePath,
         content: store.content,
-        images: includeImages ? store.contentImages : [],
+        images: includeImages
+          ? store.contentImages.map((item) => ({
+              ...item,
+              body: {
+                ...item.body,
+                altText: item.body.altText?.value || '',
+              },
+            }))
+          : [],
       })
 
       navigate('/success')

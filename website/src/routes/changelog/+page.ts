@@ -16,9 +16,22 @@ type ChangeLogItem = {
 
 const CHANGELOG: ChangeLogItem[] = [
   {
+    title: '',
+    date: '2023-03-08',
+    version: 'v0.1.1',
+    items: {
+      '✨ Features': ['Minor UI updates'],
+      '🐛 Bug fixes': [
+        'Fix RichText HTML Markup migration',
+        'Fix Text escaping',
+        'Fix org search box disappears when no results found after inputting text',
+      ],
+    },
+  },
+  {
     title: 'MVP',
     date: '2022-12-30',
-    version: '0.1.0',
+    version: 'v0.1.0',
     items: {
       '✨ Features': [
         'SFDX CLI Authentication',

@@ -142,27 +142,28 @@ export function SfdxLogin() {
         </div>
       ) : (
         <>
-          <header className='sticky top-[41px] px-4 pt-4 pb-6 bg-white dark:bg-jumbo-900'>
+          <header className='sticky top-[40px] px-4 pt-4 pb-6 bg-white dark:bg-jumbo-900'>
             <div className='mb-4'>
               <BackButton />
             </div>
 
             <h1 className='text-3xl font-bold'>SFDX Orgs</h1>
 
-            {!isLoading && orgsFiltered.length > 0 && (
-              <>
-                <p className='mb-4 text-jumbo-700 dark:text-jumbo-200'>
-                  {!isLoading && 'Select an org for export'}
-                </p>
+            {!isLoading &&
+              (orgsFiltered.length > 0 || orgSearch.length !== 0) && (
+                <>
+                  <p className='mb-4 text-jumbo-700 dark:text-jumbo-200'>
+                    {!isLoading && 'Select an org for export'}
+                  </p>
 
-                <input
-                  value={orgSearch}
-                  onChange={(e) => setOrgSearch(e.target.value)}
-                  placeholder='Search by Username or Instance URL...'
-                  className='bg-transparent p-2 mt-2 w-full border-2 border-jumbo-150 dark:border-jumbo-400 focus:outline focus:border-primary focus-within:outline focus-within:outline-2 focus-within:outline-primary outline-offset-2'
-                />
-              </>
-            )}
+                  <input
+                    value={orgSearch}
+                    onChange={(e) => setOrgSearch(e.target.value)}
+                    placeholder='Search by Username or Instance URL...'
+                    className='bg-transparent p-2 mt-2 w-full border-2 border-jumbo-150 dark:border-jumbo-400 focus:outline focus:border-primary focus-within:outline focus-within:outline-2 focus-within:outline-primary outline-offset-2'
+                  />
+                </>
+              )}
 
             {errorMessage && (
               <span className='w-full block mt-2'>
@@ -170,14 +171,16 @@ export function SfdxLogin() {
               </span>
             )}
 
-            {!isLoading && orgsFiltered.length === 0 && (
-              <span className='w-full block mt-2'>
-                <ErrorMessage>
-                  No authenticated orgs found. Please authenticate an org before
-                  running
-                </ErrorMessage>
-              </span>
-            )}
+            {!isLoading &&
+              orgsFiltered.length === 0 &&
+              orgSearch.length === 0 && (
+                <span className='w-full block mt-2'>
+                  <ErrorMessage>
+                    No authenticated orgs found. Please authenticate an org
+                    before running
+                  </ErrorMessage>
+                </span>
+              )}
           </header>
 
           <div className='px-4 pb-2 mt-1'>

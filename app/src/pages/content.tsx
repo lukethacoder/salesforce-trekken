@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { invoke } from '@tauri-apps/api/tauri'
 import toast from 'react-hot-toast'
+import he from 'he'
 
 import {
   BackButton,
@@ -37,7 +38,9 @@ const convertToExport = (
         if (withImages && contentNodes.title && contentNodes.source) {
           const title = contentNodes.title.value
           const fileName = contentNodes.source.fileName
-          const altText = contentNodes.altText || ''
+          const altText = contentNodes.altText || {
+            value: '',
+          }
 
           acc[1].push({
             contentKey,
@@ -73,10 +76,14 @@ const convertToExport = (
               }
               break
             case ContentNodeType.Media:
-              console.warn('Media ', nodeObject)
               nodes[nodeKey] = {
                 ref: nodeObject.contentKey,
               }
+              break
+            case ContentNodeType.NameField:
+            case ContentNodeType.RichText:
+            case ContentNodeType.Text:
+              nodes[nodeKey] = he.decode(contentNodes[nodeKey].value as string)
               break
             default:
               nodes[nodeKey] = contentNodes[nodeKey].value
@@ -195,8 +202,6 @@ export function Content() {
       setContent(contentMetadata[0])
       setContentTypes(contentMetadata[1])
 
-      console.log('contentMetadata ', contentMetadata[0])
-
       const extraCols = contentMetadata[1].reduce<ColumnDef<any>[]>(
         (acc, type) => {
           const colsForType = Object.values(type.nodeTypes).reduce<
@@ -249,7 +254,7 @@ export function Content() {
                     )
                   }
 
-                  return original.contentNodes[item.name]?.value
+                  return he.decode(original.contentNodes[item.name]?.value)
                 },
                 meta: {
                   nodeType: item.nodeType,

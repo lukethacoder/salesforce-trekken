@@ -84,7 +84,7 @@ export function Channel() {
 
   return (
     <div className='w-full max-w-[1024px] mx-auto'>
-      <header className='sticky top-[41px] px-4 pt-4 pb-6 bg-white dark:bg-jumbo-900'>
+      <header className='sticky top-[40px] px-4 pt-4 pb-6 bg-white dark:bg-jumbo-900'>
         <div className='mb-4'>
           <BackButton />
         </div>
