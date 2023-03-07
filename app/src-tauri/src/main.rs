@@ -52,6 +52,7 @@ async fn zip_content(
     content: Vec<ContentExport>,
     images: Vec<ContentExportImage>,
 ) -> Result<(String, String), String> {
+    println!("{:?} ", &images);
     salesforce::zip::zip_metadata(
         base_url,
         access_token,

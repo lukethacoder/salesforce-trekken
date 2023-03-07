@@ -25,7 +25,9 @@ type Content = {
       [key: string]: string | object
       nodeType: ContentNodeType
     }
-    altText?: string
+    altText?: {
+      value: string
+    }
     source?: {
       fileName: string
       is_external: boolean
@@ -120,7 +122,9 @@ type ContentImageExport = {
   urlName: string
   type: string
   body: {
-    altText?: string
+    altText?: {
+      value: string
+    }
     source: {
       ref: string
     }

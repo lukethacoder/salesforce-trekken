@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from 'react'
 import { toast } from 'react-hot-toast'
+import he from 'he'
 
 import {
   ColumnDef,
@@ -112,6 +113,11 @@ export function ContentTable({
         enableResizing: true,
         enableHiding: false,
         size: 256,
+        cell: (info) => {
+          // assumes all title fields are strings
+          // decoding fixes `&` and other special chars when rendering
+          return he.decode(info.renderValue() as string)
+        },
         footer: (props: any) => props.column.id,
         ...COLUMN_CONFIG,
       },
