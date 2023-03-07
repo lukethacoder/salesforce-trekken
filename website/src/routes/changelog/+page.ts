@@ -21,7 +21,11 @@ const CHANGELOG: ChangeLogItem[] = [
     version: 'v0.1.1',
     items: {
       '✨ Features': ['Minor UI updates'],
-      '🐛 Bug fixes': ['Fix RichText HTML Markup migration', 'Fix Text escaping'],
+      '🐛 Bug fixes': [
+        'Fix RichText HTML Markup migration',
+        'Fix Text escaping',
+        'Fix org search box disappears when no results found after inputting text',
+      ],
     },
   },
   {
