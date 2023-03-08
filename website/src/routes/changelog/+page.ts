@@ -14,6 +14,10 @@ type ChangeLogItem = {
   }
 }
 
+/**
+ * NOTE: version here should relate to a git tag
+ * https://github.com/lukethacoder/salesforce-trekken/releases/tag/{TAG_HERE}
+ */
 const CHANGELOG: ChangeLogItem[] = [
   {
     title: '',

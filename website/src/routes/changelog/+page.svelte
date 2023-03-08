@@ -34,9 +34,16 @@
               class="absolute -top-[1.0625rem] -left-1 h-[0.5625rem] w-[0.5625rem] rounded-full border-2 border-gray-300 bg-gray-900 md:top-[0.4375rem]"
             />
 
-            <h2 class="text-2xl font-semibold mb-4">
-              {release.version}{#if release.title}: {release.title}{/if}
-            </h2>
+            <a
+              href="https://github.com/lukethacoder/salesforce-trekken/releases/tag/{release.version}"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="hover:underline"
+            >
+              <h2 class="text-2xl font-semibold mb-4">
+                {release.version}{#if release.title}: {release.title}{/if}
+              </h2>
+            </a>
             {#each Object.keys(release.items) as item}
               <p class="mb-3 font-semibold">{item}</p>
               <ul class="mb-6 ml-2">

@@ -40,6 +40,7 @@
     <li><a href="#prerequisites">Prerequisites</a></li>
     <!-- <li><a href="#usage">Usage</a></li> -->
     <!-- <li><a href="#roadmap">Roadmap</a></li> -->
+    <li><a href="#releases">Releases</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
   </ol>
@@ -90,6 +91,16 @@ You must have the `sfdx` cli installed with your org already authenticated for t
 - [ ] Multi-thread REST API requests for CMS data
 
 See the [open issues](https://github.com/lukethacoder/salesforce-trekken/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Release -->
+
+## Releases
+
+Releases are auto created from a Github Action that is fired off when a new `git tag` is created on the `main` branch. Before creating the `git tag`, make sure you have manually set the new release version in both the Rust and JavaScript code.
+
+After the Github Action has run, a draft Release will be created. Make sure to edit the release notes before publishing.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
